@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84ffff"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reset"
+        android:id="@+id/reset"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:layout_marginTop="35dp"
+        android:id="@+id/viewPager" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/ic_arrow_back_black_24dp"
+        android:id="@+id/previousBtn"
+        android:drawablePadding="5dp"
+        android:visibility="invisible"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textColor="#000"
+        android:id="@+id/nextBtn"
+        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+        android:drawablePadding="5dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="end"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
